@@ -1,0 +1,21 @@
+.fs-extra-small {
+  font-size: 13px;
+  color: rgb(194, 194, 194);
+}
+
+.card-image-size {
+    max-width: 300px; /* Set your desired maximum width */
+    max-height: 300px; /* Set your desired maximum height */
+    object-fit: cover;
+  }
+.collection-card-image-size {
+    max-width: 200px; /* Set your desired maximum width */
+    max-height: 200px; /* Set your desired maximum height */
+    object-fit: cover;
+  }
+
+  /* About Us */
+  .about-us {
+    padding-top: 55px;
+  }
+  /* About Us */

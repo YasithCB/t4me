@@ -25,7 +25,7 @@ const HotDeals = ({ productsList }) => {
                 rippleTag="div"
                 className="bg-image rounded hover-zoom"
               >
-                <MDBCardImage src={product.imgUrl} fluid className="w-100" />
+                <MDBCardImage src={product.imgUrl} fluid className="w-100 card-image-size" />
                 <a href="#!">
                   <div className="mask">
                     <div className="d-flex justify-content-start align-items-end h-100">

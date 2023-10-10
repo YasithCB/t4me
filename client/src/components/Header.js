@@ -15,31 +15,31 @@ const Header = () => {
       <MDBNavbar expand="lg" light bgColor="light">
         <MDBContainer fluid className="navbar-container">
           <MDBNavbarBrand href="#">
-            <img src="\images\logo.png" height={30} />
+            <img src="\images\logo.png" alt="#" height={30} />
           </MDBNavbarBrand>
 
           <MDBCollapse navbar>
             <MDBNavbarNav className="me-auto mb-2 mb-lg-0">
               <MDBNavbarItem className="active">
-                <MDBNavbarLink aria-current="page" href="#">
+                <MDBNavbarLink aria-current="page" href="/">
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Collection</MDBNavbarLink>
+                <MDBNavbarLink href="collection">Collection</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">About</MDBNavbarLink>
+                <MDBNavbarLink href="aboutUs">About</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Contact</MDBNavbarLink>
+                <MDBNavbarLink href="contact">Contact</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
 
-            <a href="https://www.facebook.com/t4me.lk" target="_blank">
+            <a href="https://www.facebook.com/t4me.lk" target="_blank" rel="noreferrer">
               <MDBIcon fab icon="facebook" size="xl" className="pe-2" />
             </a>
-            <a href="https://wa.me/+94767722095" target="_blank">
+            <a href="https://wa.me/+94767722095" target="_blank" rel="noreferrer">
               <MDBIcon
                 fab
                 icon="whatsapp"
