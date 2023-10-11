@@ -5,9 +5,9 @@ function AboutUs() {
   return (
     <>
       <Meta title={"T4Me"} />
-      <section class="container my-5 py-5 text-center">
-        <div class="row">
-          <div class="col-md-6">
+      <section className="container my-5 py-5 text-center">
+        <div className="row">
+          <div className="col-md-6">
             <h1>Welcome to T4Me Apparel & Printers</h1>
             <p>
               At <strong>T4Me</strong>, we are passionate about
@@ -25,17 +25,17 @@ function AboutUs() {
               something for everyone.
             </p>
           </div>
-          <div class="col-md-6">
+          <div className="col-md-6">
             <img
               src="https://www.digitalcommerce360.com/wp-content/uploads/2020/08/Who-are-the-top-online-apparel-merchants-1024x493.jpg"
               alt="Our Store"
-              class="img-fluid rounded p-5"
+              className="img-fluid rounded p-5"
             />
           </div>
         </div>
 
-        <div class="row mt-4">
-          <div class="col-md-12">
+        <div className="row mt-4">
+          <div className="col-md-12">
             <h2>Our Story</h2>
             <p>
               Founded in 2020, <strong>T4Me</strong> has been a

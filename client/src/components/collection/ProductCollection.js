@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import "../../Custom.css";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
-
 import ProductModal from "../ProductModal";
 
-const HotDeals = ({ productsList }) => {
+const ProductCollection = ({ productsList }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const openProductModal = (product) => {
@@ -15,14 +15,10 @@ const HotDeals = ({ productsList }) => {
   };
 
   return (
-    <MDBContainer className="my-5 text-center">
-      <h4 className="my-5">
-        <strong>Hot Deals!</strong>
-      </h4>
-
+    <MDBContainer className="my-2 text-center">
       <MDBRow>
         {productsList.map((product) => (
-          <MDBCol md="4" sm={6} lg="3" className="mb-4" key={product.id}>
+          <MDBCol md="4" sm={6} lg="3" className="mb-4" key={product.sku}>
             <div
               className="card"
               data-bs-toggle="modal"
@@ -64,4 +60,4 @@ const HotDeals = ({ productsList }) => {
   );
 };
 
-export default HotDeals;
+export default ProductCollection;

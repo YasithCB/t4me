@@ -1,17 +1,17 @@
 import React from "react";
 import Meta from "../components/Meta";
 import productsList from "../db/products";
-import ProductCollection from "../components/ProductCollection";
+import ProductCollection from "../components/collection/ProductCollection";
 
 const Collection = () => {
   return (
     <>
       <Meta title={"Collection"} />
 
-      <div className="store-wrapper home-wrapper-2 py-5 my-4">
+      <div className="store-wrapper home-wrapper-2 py-5">
         <div className="container">
           <div className="row">
-            <div className="col-3">
+            <div className="col-3 d-none d-md-block">
               <div className="filter-card mb-3">
                 <h3 className="filter-title m-0">Shop By Category</h3>
                 <p className="fs-extra-small">under development</p>
@@ -161,12 +161,12 @@ const Collection = () => {
               </div>
             </div>
 
-            <div className="col-9">
+            <div className="col-md-9 col-12">
               <div className="filter-sort-grid">
                 <div className="d-flex justify-content-end align-items-center">
                   <div className="d-flex align-items-center gap-10">
                     <p className="my-0 sub-title">Sort By : </p>
-                    <select className="form-select" id="" name="">
+                    <select className="form-select" id="sortBy" name="">
                       <option selected value="manual">
                         Featured
                       </option>
@@ -190,7 +190,7 @@ const Collection = () => {
                         Date, New to Old
                       </option>
                     </select>
-                    <p className="my-0 mx-4 sub-title">21 Products</p>
+                    <p className="my-0 mx-4 sub-title d-none d-md-block">21 Products</p>
                   </div>
                 </div>
               </div>

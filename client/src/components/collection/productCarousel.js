@@ -1,43 +1,23 @@
 import React from "react";
 import Meta from "../Meta";
 
-const Carousel = () => {
+const ProductCarousel = ({ product }) => {
   return (
     <>
       <Meta title={"T4Me"} />
       {/* <!-- Carousel wrapper --> */}
       <div
-        className="carousel slide carousel-fade carousel-dark"
+        id="carouselDarkVariant"
+        className="carousel slide carousel-dark p-0 m-0 h-50"
         data-mdb-ride="carousel"
         data-mdb-interval="4000"
       >
-        {/* <!-- Indicators - Hidden on mobile screens --> */}
-        <div className="carousel-indicators">
-          <button
-            data-mdb-target="#carouselDarkVariant"
-            data-mdb-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            data-mdb-target="#carouselDarkVariant"
-            data-mdb-slide-to="1"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            data-mdb-target="#carouselDarkVariant"
-            data-mdb-slide-to="2"
-            aria-label="Slide 1"
-          ></button>
-        </div>
-
         {/* <!-- Inner --> */}
         <div className="carousel-inner">
           {/* <!-- Single item --> */}
           <div className="carousel-item active">
             <img
-              src="/images/carousel/img1.jpg"
+              src={product.imgUrl}
               className="d-block w-100"
               alt="Motorbike Smoke"
             />
@@ -46,7 +26,7 @@ const Carousel = () => {
           {/* <!-- Single item --> */}
           <div className="carousel-item">
             <img
-              src="/images/carousel/img2.jpg"
+              src={product.imgUrl}
               className="d-block w-100"
               alt="Mountaintop"
             />
@@ -55,7 +35,7 @@ const Carousel = () => {
           {/* <!-- Single item --> */}
           <div className="carousel-item">
             <img
-              src="/images/carousel/img3.jpg"
+              src={product.imgUrl}
               className="d-block w-100"
               alt="Woman Reading a Book"
             />
@@ -65,7 +45,7 @@ const Carousel = () => {
 
         {/* <!-- Controls --> */}
         <button
-          className="carousel-control-prev d-none d-md-flex"
+          className="carousel-control-prev"
           type="button"
           data-mdb-target="#carouselDarkVariant"
           data-mdb-slide="prev"
@@ -77,7 +57,7 @@ const Carousel = () => {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next d-none d-md-flex"
+          className="carousel-control-next"
           type="button"
           data-mdb-target="#carouselDarkVariant"
           data-mdb-slide="next"
@@ -94,4 +74,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ProductCarousel;

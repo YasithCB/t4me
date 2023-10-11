@@ -19,7 +19,7 @@ const Footer = () => {
               <div className="input-group">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your E-mail"
                   aria-label="Your E-mail"
                   aria-describedby="basic-addon2"

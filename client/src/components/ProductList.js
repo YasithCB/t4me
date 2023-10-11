@@ -33,9 +33,9 @@ function ProductList(props) {
             <h5 className="text-dark mb-0"> {props.newPrice} </h5>
           </div>
 
-          <div class="d-flex justify-content-between mb-2">
-            <p class="text-muted mb-0">
-              Available: <span class="fw-bold"> {props.stock} </span>
+          <div className="d-flex justify-content-between mb-2">
+            <p className="text-muted mb-0">
+              Available: <span className="fw-bold"> {props.stock} </span>
             </p>
             <ReactStars
               count={5}
