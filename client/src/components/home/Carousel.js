@@ -39,7 +39,7 @@ const Carousel = () => {
             <img
               src="/images/carousel/img1.jpg"
               className="d-block w-100"
-              alt="Motorbike Smoke"
+              alt=""
             />
           </div>
 
@@ -48,7 +48,7 @@ const Carousel = () => {
             <img
               src="/images/carousel/img2.jpg"
               className="d-block w-100"
-              alt="Mountaintop"
+              alt=""
             />
           </div>
 
@@ -57,37 +57,13 @@ const Carousel = () => {
             <img
               src="/images/carousel/img3.jpg"
               className="d-block w-100"
-              alt="Woman Reading a Book"
+              alt=""
             />
           </div>
         </div>
         {/* <!-- Inner --> */}
 
-        {/* <!-- Controls --> */}
-        <button
-          className="carousel-control-prev d-none d-md-flex"
-          type="button"
-          data-mdb-target="#carouselDarkVariant"
-          data-mdb-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next d-none d-md-flex"
-          type="button"
-          data-mdb-target="#carouselDarkVariant"
-          data-mdb-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+      
       </div>
       {/* <!-- Carousel wrapper -->  */}
     </>

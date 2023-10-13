@@ -24,7 +24,7 @@ const HotDeals = ({ productsList }) => {
         {productsList.map((product) => (
           <MDBCol md="4" sm={6} lg="3" className="mb-4" key={product.id}>
             <div
-              className="card"
+              className="text-start"
               data-bs-toggle="modal"
               data-bs-target="#productModal"
               onClick={() => openProductModal(product)}
@@ -34,11 +34,7 @@ const HotDeals = ({ productsList }) => {
                 className="bg-image hover-overlay ripple hover-zoom"
                 data-mdb-ripple-color="light"
               >
-                <img
-                  src={product.imgUrl}
-                  className="img-fluid"
-                  alt=""
-                />
+                <img src={product.imgUrl} className="img-fluid" alt="" />
                 <a href="#!">
                   <div
                     className="mask"
@@ -46,12 +42,9 @@ const HotDeals = ({ productsList }) => {
                   ></div>
                 </a>
               </div>
-              <div className="card-body">
-                <h6 className="card-title">
-                  {product.name || "Unknown Product"}
-                </h6>
-                <p>{product.category}</p>
-                <p className="text-primary">{product.price}</p>
+              <div className="card-body py-3 p-0">
+                <p>{product.name || "Unknown Product"}</p>
+                <p>{product.price}.00 LKR</p>
               </div>
             </div>
           </MDBCol>

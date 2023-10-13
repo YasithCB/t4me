@@ -9,14 +9,7 @@ p {
 }
 
 .navbar-custom {
-  padding-left: 50px;
-  padding-right: 50px;
-  /* position: fixed; */
-  z-index: 10;
-  background-color: white;
-  /* padding-top: 70px; */
-  /* padding-bottom: 15px; */
-  opacity: 0.9;
+  height: 8vh
 }
 
 /* About Us */
@@ -24,3 +17,22 @@ p {
   padding-top: 55px;
 }
 /* About Us */
+
+/* item card */
+.card-body {
+  font-family: "Work Sans", sans-serif;
+}
+.card-body :first-child {
+  font-size: 15px;
+}
+.card-body :last-child {
+  font-size: 19px;
+}
+
+/* item card */
+
+/* carousel */
+.carousel-inner {
+  height: 85vh;
+}
+/* carousel */

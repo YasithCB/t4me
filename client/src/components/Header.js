@@ -4,8 +4,8 @@ import { MDBIcon } from "mdb-react-ui-kit";
 const Header = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="container navbar-custom">
           <a class="navbar-brand" href="/">
             <img src="/images/logo.png" alt="#" height={30} />
           </a>
