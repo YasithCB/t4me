@@ -8,8 +8,13 @@ p {
   margin: 0;
 }
 
+.small-text {
+  font-size: 13px;
+  color: rgb(165, 165, 165);
+}
+
 .navbar-custom {
-  height: 8vh
+  height: 8vh;
 }
 
 /* About Us */
@@ -36,3 +41,34 @@ p {
   height: 85vh;
 }
 /* carousel */
+
+/* productDetails */
+.product-details :first-child {
+  font-size: 35px;
+  color: black;
+}
+.product-details :nth-child(2) {
+  font-size: 15px;
+  color: rgb(110, 110, 110);
+}
+/* productDetails */
+
+/* btns */
+.round-button {
+  border: none;
+  background-color: #ffffff; /* Set the background color to your desired color */
+  color: #000000; /* Set the text color to your desired color */
+  border-radius: 15%; /* Makes the button round */
+  padding: 8px 20px; /* Adjust the padding as needed */
+  outline: 1px solid grey; /* Remove the default outline (focus ring) */
+  box-shadow: none; /* Remove any box shadow */
+  font-size: 13px;
+}
+
+/* Remove the button style for iOS devices */
+.round-button::-webkit-inner-spin-button,
+.round-button::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* btns */
