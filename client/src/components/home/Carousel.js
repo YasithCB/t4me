@@ -7,7 +7,7 @@ const Carousel = () => {
       <Meta title={"T4Me"} />
       {/* <!-- Carousel wrapper --> */}
       <div
-        className="carousel slide carousel-fade carousel-dark"
+        className="carousel slide carousel-fade carousel-dark mobile-carousel"
         data-mdb-ride="carousel"
         data-mdb-interval="4000"
       >
@@ -62,8 +62,6 @@ const Carousel = () => {
           </div>
         </div>
         {/* <!-- Inner --> */}
-
-      
       </div>
       {/* <!-- Carousel wrapper -->  */}
     </>

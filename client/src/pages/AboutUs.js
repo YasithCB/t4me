@@ -5,11 +5,11 @@ function AboutUs() {
   return (
     <>
       <Meta title={"T4Me"} />
-      <section className="container my-5 py-5 text-center">
+      <section className="container mb-2 py-5 text-center">
         <div className="row">
-          <div className="col-md-6">
-            <h1>Welcome to T4Me Apparel & Printers</h1>
-            <p>
+          <div className="col-md-6 medium-text">
+            <h1 className="mb-4 large-text">Welcome to T4Me Apparel & Printers</h1>
+            <p >
               At <strong>T4Me</strong>, we are passionate about
               fashion and providing high-quality apparel for our customers. With
               years of experience in the industry, we have become a trusted name
@@ -17,7 +17,7 @@ function AboutUs() {
               women, and children.
             </p>
 
-            <p>
+            <p >
               Our mission is to make you look and feel your best. We carefully
               curate our collections to ensure that you have access to the
               latest trends and timeless classics. Whether you're dressing up
@@ -35,8 +35,8 @@ function AboutUs() {
         </div>
 
         <div className="row mt-4">
-          <div className="col-md-12">
-            <h2>Our Story</h2>
+          <div className="col-md-12 medium-text">
+            <h2 className="large-text">Our Story</h2>
             <p>
               Founded in 2020, <strong>T4Me</strong> has been a
               staple in the fashion industry. We started with a small boutique

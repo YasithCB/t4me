@@ -1,7 +1,8 @@
 import React from "react";
 import Meta from "../components/Meta";
 import productsList from "../db/products";
-import ProductCollection from "../components/collection/ProductCollection";
+import ProductList from "../components/ProductList";
+import RoundButton from "../components/RoundButton";
 
 const Collection = () => {
   return (
@@ -129,7 +130,11 @@ const Collection = () => {
                       </label>
                     </div>
                   </div>
-                  <button className="btn btn-primary mt-3">Filter</button>
+                  <RoundButton
+                  text="Filter"
+                    onClick={() => { }}
+                    isSelected={true}
+                />
                 </div>
               </div>
 
@@ -196,7 +201,7 @@ const Collection = () => {
               </div>
 
               <div className="store-product-list py-3 d-flex flex-wrap justify-content-center">
-                <ProductCollection productsList={productsList} />
+                <ProductList productsList={productsList} />
               </div>
             </div>
           </div>

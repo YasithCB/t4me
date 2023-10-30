@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <Meta title="Contact" />
 
-      <div className="contact-wrapper py-5 mt-3">
+      <div className="contact-wrapper my-2">
         <div className="container">
           <div className="row">
             <div className="col-12 mb-4">
@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
 
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 text-center">
               <h2>Contact Us</h2>
               <form className="py-3">
                 <div className="mb-3">
@@ -72,10 +72,10 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="col-12 col-md-6">
-              <h2>Get In Touch With Us</h2>
+            <div className="col-12 col-md-6 mt-3 medium-text">
+              <h2 className="text-center">Get In Touch With Us</h2>
               <ul className="list-unstyled py-3">
-                <li className="my-2 row">
+                <li className="row">
                   <div className="col-1 text-end">
                     <BiHomeHeart />
                   </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                     </address>
                   </div>
                 </li>
-                <li className="my-2 row">
+                <li className="row">
                   <div className="col-1 text-end">
                     <BiPhoneCall />
                   </div>

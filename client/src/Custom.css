@@ -5,16 +5,33 @@
 
 p {
   padding: 0;
+  font-family: "Work Sans", sans-serif;
   margin: 0;
 }
 
+.extra-small-text {
+  font-size: 9px;
+}
 .small-text {
   font-size: 13px;
   color: rgb(165, 165, 165);
 }
+.medium-text {
+  font-size: 14px;
+}
+.large-text {
+  font-size: 17px;
+}
+.buy-now-text {
+  font-size: 5px;
+}
+.grey-text {
+  color: rgb(148, 148, 148);
+}
 
 .navbar-custom {
-  height: 8vh;
+  /* height: 8vh; */
+  padding: 16px;
 }
 
 /* About Us */
@@ -36,33 +53,70 @@ p {
 
 /* item card */
 
-/* carousel */
-.carousel-inner {
-  height: 85vh;
-}
-/* carousel */
-
 /* productDetails */
-.product-details :first-child {
+.product-name {
   font-size: 35px;
   color: black;
 }
-.product-details :nth-child(2) {
+.product-price {
   font-size: 15px;
   color: rgb(110, 110, 110);
 }
-/* productDetails */
+
+@media (max-width: 760px) {
+  .product-name {
+    font-size: 16px !important;
+  }
+  .round-button {
+    border-radius: 8% !important;
+    font-size: 8.5px !important;
+    display: block;
+    width: 100%;
+  }
+
+  .medium-text {
+    font-size: 14px !important;
+  }
+  .small-text {
+    font-size: 11px !important;
+  }
+
+  .buy-now-text {
+    font-size: 11.5px !important;
+  }
+
+  /* input */
+  .input-group input::placeholder {
+    font-size: 10px;
+  }
+  .input-group {
+    height: 12px;
+  }
+
+  /* btn */
+  .btn-subscribe{
+    font-size: 10px;
+  }
+}
 
 /* btns */
 .round-button {
-  border: none;
-  background-color: #ffffff; /* Set the background color to your desired color */
-  color: #000000; /* Set the text color to your desired color */
-  border-radius: 15%; /* Makes the button round */
-  padding: 8px 20px; /* Adjust the padding as needed */
-  outline: 1px solid grey; /* Remove the default outline (focus ring) */
-  box-shadow: none; /* Remove any box shadow */
+  border-radius: 15%;
+  padding: 8px 20px;
   font-size: 13px;
+}
+.btn-place-order {
+  font-size: 12.5px !important;
+}
+
+/* icons */
+.send-icon {
+  size: 30;
+}
+
+/* inputs */
+.input-group {
+  /* height: 10px; */
 }
 
 /* Remove the button style for iOS devices */

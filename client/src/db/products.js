@@ -95,15 +95,6 @@ const productsList = [
     imgUrl: "/images/printed/0042.jpg",
     price: 1990,
   },
-  {
-    sku: "0043",
-    name: "Elephant",
-    desc: "",
-    category: "Printed",
-    imgUrl: "/images/printed/0043.jpg",
-    price: 1590,
-  },
 ];
 
 export default productsList;
-

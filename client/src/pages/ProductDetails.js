@@ -23,7 +23,7 @@ const ProductDetails = () => {
     <>
       <div className="product-details container my-4">
         <div className="row">
-          <div className="col-7">
+          <div className="col-12 col-md-7">
             <div className="row g-2 mb-2">
               <div className="col-12">
                 <img src={product.imgUrl} className="img-fluid" alt="" />
@@ -38,34 +38,163 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="col-5">
-            <p>{product.name}</p>
-            <p>{product.price}.00 LKR</p>
-            <p className="small-text mt-3">Size</p>
-            <button
-              className={`btn ${selectedSize === "M" ? "btn-dark" : ""} m-2`}
-              onClick={() => onSelectSize("M")}
-            >
-              M
-            </button>
-            <button
-              className={`btn ${selectedSize === "L" ? "btn-dark" : ""} m-2`}
-              onClick={() => onSelectSize("L")}
-            >
-              L
-            </button>
 
-            <p className="small-text mt-3">Color</p>
-            <RoundButton
-              text="White"
-              onClick={() => onSelectColor("White")}
-              isSelected={selectedColor === "White"}
-            />
-            <RoundButton
-              text="Black"
-              onClick={() => onSelectColor("Black")}
-              isSelected={selectedColor === "Black"}
-            />
+          <div className="col-12 col-md-5 mt-3 text-center">
+            <p className="product-name">{product.name}</p>
+            <p className="medium-text">{product.price}.00 LKR</p>
+
+            <div className="size-color-container row justify-content-center">
+              <div className="size-container col-5 col-md-12">
+                <p className="small-text mt-3 text-center">Size</p>
+                <RoundButton
+                  text="M"
+                  onClick={() => onSelectSize("M")}
+                  isSelected={selectedSize === "M"}
+                />
+                <RoundButton
+                  text="L"
+                  onClick={() => onSelectSize("L")}
+                  isSelected={selectedSize === "L"}
+                />
+              </div>
+
+              <div className="colorContainer col-5 col-md-12">
+                <p className="small-text mt-3 text-center">Color</p>
+                <RoundButton
+                  text="White"
+                  onClick={() => onSelectColor("White")}
+                  isSelected={selectedColor === "White"}
+                />
+                <RoundButton
+                  text="Black"
+                  onClick={() => onSelectColor("Black")}
+                  isSelected={selectedColor === "Black"}
+                />
+              </div>
+            </div>
+
+            <div className="my-3">
+              <p className="grey-text medium-text">{product.category}</p>
+              <p className="grey-text medium-text">SKU : {product.sku}</p>
+              <p className="grey-text medium-text">Price : {product.price}</p>
+            </div>
+
+            {/* buy now */}
+            <div className="buy-now-container">
+              <p>
+                <button
+                  class="btn btn-dark px-5 my-3 round-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Buy Now
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body ">
+                  <p className="buy-now-text">
+                    Material: 100% COTTON
+                    <br />
+                    Island wide fast delivery ❗️
+                    <br />
+                    <br />
+                    MEDIUM : Height 25" | chest 19" | shoulders 17" | sleeves 8"
+                    <br />
+                    LARGE : Height 27" | chest 20" | shoulders 18" | sleeves
+                    8.5"
+                    <br />
+                    <br />
+                    Collar Type : O-Neck
+                    <br />
+                    Sleeves : Short Sleeve
+                    <br />
+                    Clothing Material : Cotton
+                    <br />
+                    Clothing Style : Youthful T-shirt
+                    <br />
+                    Washable Type : Hand wash recommended
+                    <br />
+                  </p>
+                  <br />
+                  <p className="buy-now-text">
+                    Cash on delivery charges
+                    <br />
+                    1️⃣T-shirt - 360/=
+                    <br />
+                    2️⃣T-shirts - 450/=
+                    <br />
+                    3️⃣T-shirts - 490/=
+                    <br />
+                    4️⃣T-shirts - 550/=
+                  </p>
+                  <br />
+                  <hr />
+                  <br />
+                  <p className="buy-now-text mb-2">
+                    If you need to place an order, send the following details:
+                    <br />
+                    🔗 Your Name
+                    <br />
+                    🔗 Your address (as you receive post mails)
+                    <br />
+                    🔗 Mobile numbers (recommended to give 2 numbers)
+                    <br />
+                    🔗 Product details you want (SKU | Size | Color)
+                    <br />
+                  </p>
+                  <p className="buy-now-text">
+                    Your package will be received via Fardar Domestic Express
+                    within 1-3 weekdays❗️
+                  </p>
+                  <p className="buy-now-text">
+                    Plz send the address like below 👇
+                    <br />
+                    <br />
+                    Your Name Here
+                    <br />
+                    No 120/b, Botreejunction, Opanayaka, Ratnapura.
+                    <br />
+                    07X XXXX XXX
+                  </p>
+                  <hr />
+                  <a
+                    href="https://wa.me/+94767722095"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button
+                      className="btn btn-success btn-block px-5 my-3 btn-place-order"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Place a Order Now
+                    </button>
+                  </a>
+                  <hr />
+                  <p className="extra-small-text">
+                    -- See our customers feedbacks and more images --
+                  </p>
+                  <p className="buy-now-text">
+                    Visit our :
+                    <br />
+                    <a href="https://www.facebook.com/t4me.lk">Facebook Page</a>
+                    <br />
+                    <a
+                      className="buy-now-text"
+                      href="https://www.daraz.lk/shop/t4me-apparel-printers"
+                    >
+                      Daraz Shop
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
