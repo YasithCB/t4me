@@ -1,8 +1,8 @@
 import React from "react";
 import Meta from "../components/Meta";
-import productsList from "../db/products";
 import ProductList from "../components/ProductList";
 import RoundButton from "../components/RoundButton";
+import allProductsList from "../db/allProducts";
 
 const Collection = () => {
   return (
@@ -75,8 +75,7 @@ const Collection = () => {
                           style={{
                             backgroundColor: "white",
                             border: "1px solid grey",
-                          }}
-                        ></li>
+                          }}></li>
 
                         <li style={{ backgroundColor: "red" }}></li>
                         <li style={{ backgroundColor: "rgb(160, 0, 0)" }}></li>
@@ -131,10 +130,10 @@ const Collection = () => {
                     </div>
                   </div>
                   <RoundButton
-                  text="Filter"
-                    onClick={() => { }}
+                    text="Filter"
+                    onClick={() => {}}
                     isSelected={true}
-                />
+                  />
                 </div>
               </div>
 
@@ -195,13 +194,15 @@ const Collection = () => {
                         Date, New to Old
                       </option>
                     </select>
-                    <p className="my-0 mx-4 sub-title d-none d-md-block">21 Products</p>
+                    <p className="my-0 mx-4 sub-title d-none d-md-block">
+                      21 Products
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className="store-product-list py-3 d-flex flex-wrap justify-content-center">
-                <ProductList productsList={productsList} />
+                <ProductList productsList={allProductsList} />
               </div>
             </div>
           </div>

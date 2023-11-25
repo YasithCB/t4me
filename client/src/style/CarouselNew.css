@@ -1,0 +1,22 @@
+.carousel-container {
+  height: 80vh;
+  position: relative;
+}
+
+.left-col {
+  background-color: white;
+}
+.right-col {
+  background-image: url("../../public/images/carousel/img1.jpg");
+  background-size: cover;
+}
+
+.mid-card {
+  background-color: rgb(219, 219, 219);
+  height: 70%;
+  position: absolute;
+  width: 30%;
+  top: 15%;
+  left: 12.5%;
+  z-index: 1;
+}

@@ -11,14 +11,14 @@ function ProductList({ productsList }) {
               {/* Card content */}
               <div
                 className="bg-image hover-overlay ripple hover-zoom"
-                data-mdb-ripple-color="light"
-              >
+                data-mdb-ripple-color="light">
                 <img src={product.imgUrl} className="img-fluid" alt="" />
                 <a href={`productDetails/${product.sku}`}>
                   <div
                     className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
-                  ></div>
+                    style={{
+                      backgroundColor: "rgba(251, 251, 251, 0.15)",
+                    }}></div>
                 </a>
               </div>
               <div className="card-body py-3 p-0">

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import productsList from "../db/products";
 import RoundButton from "../components/RoundButton";
+import allProductsList from "../db/allProducts";
 
 const ProductDetails = () => {
   const { productId } = useParams();
-  const product = productsList.find((item) => item.sku === productId);
+  const product = allProductsList.find((item) => item.sku === productId);
 
   // States for selected color and size
   const [selectedColor, setSelectedColor] = useState("White");
