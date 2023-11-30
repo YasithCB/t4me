@@ -12,7 +12,7 @@ function ProductList({ productsList }) {
               <div
                 className="bg-image hover-overlay ripple hover-zoom"
                 data-mdb-ripple-color="light">
-                <img src={product.imgUrl} className="img-fluid" alt="" />
+                <img src={product.imgUrl[0]} className="img-fluid" alt="" />
                 <a href={`productDetails/${product.sku}`}>
                   <div
                     className="mask"

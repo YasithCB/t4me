@@ -193,14 +193,6 @@ const allProductsList = [
     imgUrl: "/images/printed/0041.jpg",
     price: 1590,
   },
-  {
-    sku: "0042",
-    name: "BTS",
-    desc: "BTS | Colorfull with flowers",
-    category: "Printed",
-    imgUrl: "/images/printed/0042.jpg",
-    price: 1590,
-  },
 ];
 
 allProductsList.push(...topProductsList);

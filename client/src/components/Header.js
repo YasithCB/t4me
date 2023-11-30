@@ -4,52 +4,49 @@ import { MDBIcon } from "mdb-react-ui-kit";
 const Header = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-        <div class="container navbar-custom">
-          <a class="navbar-brand" href="/">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div className="container navbar-custom">
+          <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="#" height={30} />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+            aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
-              <a class="nav-link" href="collection">
+              <a className="nav-link" href="collection">
                 Collection
               </a>
-              <a class="nav-link" href="about">
+              <a className="nav-link" href="about">
                 About
               </a>
-              <a class="nav-link" href="contact">
+              <a className="nav-link" href="contact">
                 Contact
               </a>
             </div>
 
             {/* Move these buttons to the end of the row */}
-            <div class="ms-auto">
+            <div className="ms-auto">
               <a
                 href="https://www.facebook.com/t4me.lk"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <MDBIcon fab icon="facebook" size="xl" className="pe-2" />
               </a>
               <a
                 href="https://wa.me/+94767722095"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <MDBIcon
                   fab
                   icon="whatsapp"

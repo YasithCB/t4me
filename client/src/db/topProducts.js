@@ -4,7 +4,12 @@ const topProductsList = [
     name: "Peach Goma",
     desc: "The latest iPhone from Apple.",
     category: "Printed",
-    imgUrl: "/images/printed/0009.jpg",
+    imgUrl: [
+      "/images/printed/0009.jpg",
+      "/images/printed/0009.1.jpg",
+      "/images/printed/0009.2.jpg",
+      "/images/printed/0009.3.jpg",
+    ],
     price: 1390,
   },
   {
@@ -12,7 +17,12 @@ const topProductsList = [
     name: "Peach Goma",
     desc: "The latest Samsung Galaxy smartphone.",
     category: "Printed",
-    imgUrl: "/images/printed/0018.jpg",
+    imgUrl: [
+      "/images/printed/0018.jpg",
+      "/images/printed/0018.1.jpg",
+      "/images/printed/0018.2.jpg",
+      "/images/printed/0018.3.jpg",
+    ],
     price: 1490,
   },
   {
@@ -20,7 +30,7 @@ const topProductsList = [
     name: "Jack Daniel's",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0011.jpg",
+    imgUrl: ["/images/printed/0011.jpg"],
     price: 1690,
   },
   {
@@ -28,7 +38,11 @@ const topProductsList = [
     name: "Peach Goma",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0017.jpg",
+    imgUrl: [
+      "/images/printed/0017.jpg",
+      "/images/printed/0017.1.jpg",
+      "/images/printed/0017.2.jpg",
+    ],
     price: 1390,
   },
   {
@@ -36,7 +50,12 @@ const topProductsList = [
     name: "Peach Goma",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0019.jpg",
+    imgUrl: [
+      "/images/printed/0019.jpg",
+      "/images/printed/0019.1.jpg",
+      "/images/printed/0019.2.jpg",
+      "/images/printed/0019.3.jpg",
+    ],
     price: 1390,
   },
   {
@@ -44,7 +63,11 @@ const topProductsList = [
     name: "White Heart",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0024.jpg",
+    imgUrl: [
+      "/images/printed/0024.jpg",
+      "/images/printed/0024.1.jpg",
+      "/images/printed/0024.2.jpg",
+    ],
     price: 1490,
   },
   {
@@ -52,7 +75,12 @@ const topProductsList = [
     name: "Peach Goma",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0026.jpg",
+    imgUrl: [
+      "/images/printed/0026.jpg",
+      "/images/printed/0026.1.jpg",
+      "/images/printed/0026.2.jpg",
+      "/images/printed/0026.3.jpg",
+    ],
     price: 1590,
   },
   {
@@ -60,7 +88,11 @@ const topProductsList = [
     name: "White Flower",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0028.jpg",
+    imgUrl: [
+      "/images/printed/0028.jpg",
+      "/images/printed/0028.1.jpg",
+      "/images/printed/0028.2.jpg",
+    ],
     price: 1390,
   },
   {
@@ -68,7 +100,11 @@ const topProductsList = [
     name: "Sun & Moon",
     desc: "",
     category: "Printed Couple",
-    imgUrl: "/images/printed/0032.jpg",
+    imgUrl: [
+      "/images/printed/0032.jpg",
+      "/images/printed/0032.1.jpg",
+      "/images/printed/0032.2.jpg",
+    ],
     price: 1590,
   },
   {
@@ -76,7 +112,11 @@ const topProductsList = [
     name: "BTS",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0034.jpg",
+    imgUrl: [
+      "/images/printed/0034.jpg",
+      "/images/printed/0034.1.jpg",
+      "/images/printed/0034.2.jpg",
+    ],
     price: 1490,
   },
   {
@@ -84,7 +124,11 @@ const topProductsList = [
     name: "Sunflower",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0035.jpg",
+    imgUrl: [
+      "/images/printed/0035.jpg",
+      "/images/printed/0035.1.jpg",
+      "/images/printed/0035.2.jpg",
+    ],
     price: 1590,
   },
   {
@@ -92,7 +136,11 @@ const topProductsList = [
     name: "King Cat",
     desc: "",
     category: "Printed",
-    imgUrl: "/images/printed/0042.jpg",
+    imgUrl: [
+      "/images/printed/0042.jpg",
+      "/images/printed/0042.1.jpg",
+      "/images/printed/0042.2.jpg",
+    ],
     price: 1990,
   },
 ];

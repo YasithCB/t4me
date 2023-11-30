@@ -26,16 +26,21 @@ const ProductDetails = () => {
           <div className="col-12 col-md-7">
             <div className="row g-2 mb-2">
               <div className="col-12">
-                <img src={product.imgUrl} className="img-fluid" alt="" />
+                <img src={product.imgUrl[0]} className="img-fluid" alt="" />
               </div>
             </div>
+            {/* Assuming 'product' is your object containing the 'imgUrl' array */}
             <div className="row g-2">
-              <div className="col-6">
-                <img src={product.imgUrl} className="img-fluid" alt="" />
-              </div>
-              <div className="col-6">
-                <img src={product.imgUrl} className="img-fluid" alt="" />
-              </div>
+              {console.log(product)}
+              {product.imgUrl.slice(1).map((url, index) => (
+                <div className="col-6" key={index}>
+                  <img
+                    src={url}
+                    className="img-fluid"
+                    alt={`Product Preview ${index + 2}`}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -83,18 +88,17 @@ const ProductDetails = () => {
             <div className="buy-now-container">
               <p>
                 <button
-                  class="btn btn-dark px-5 my-3 round-button"
+                  className="btn btn-dark px-5 my-3 round-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseExample"
                   aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
+                  aria-controls="collapseExample">
                   Buy Now
                 </button>
               </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body ">
+              <div className="collapse" id="collapseExample">
+                <div className="card card-body ">
                   <p className="buy-now-text">
                     Material: 100% COTTON
                     <br />
@@ -163,16 +167,14 @@ const ProductDetails = () => {
                   <a
                     href="https://wa.me/+94767722095"
                     target="_blank"
-                    rel="noreferrer"
-                  >
+                    rel="noreferrer">
                     <button
                       className="btn btn-success btn-block px-5 my-3 btn-place-order"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseExample"
                       aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
+                      aria-controls="collapseExample">
                       Place a Order Now
                     </button>
                   </a>
@@ -187,8 +189,7 @@ const ProductDetails = () => {
                     <br />
                     <a
                       className="buy-now-text"
-                      href="https://www.daraz.lk/shop/t4me-apparel-printers"
-                    >
+                      href="https://www.daraz.lk/shop/t4me-apparel-printers">
                       Daraz Shop
                     </a>
                   </p>
