@@ -27,6 +27,9 @@ const Header = () => {
               <a className="nav-link" href="collection">
                 Collection
               </a>
+              <a className="nav-link" href="gallery">
+                Galary
+              </a>
               <a className="nav-link" href="about">
                 About
               </a>

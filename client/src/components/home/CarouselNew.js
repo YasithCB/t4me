@@ -18,9 +18,14 @@ const CarouselNew = () => {
       body: "Printed T-shirts showcase individual style with vibrant designs and messages, making them a popular and expressive fashion choice",
     },
     {
-      imgUrl: "/images/printed/0018.jpg",
-      title: "Printed T-shirts 2",
-      body: "2 Printed T-shirts showcase individual style with vibrant designs and messages, making them a popular and expressive fashion choice",
+      imgUrl: "/images/plain/p0001.jpg",
+      title: "Plain T-shirts",
+      body: "Simplicity in style, a canvas for self-expression, plain tees resonate",
+    },
+    {
+      imgUrl: "/images/frocks/fk0001.jpg",
+      title: "Frocks",
+      body: "Frocks twirl with tales, stitching memories into the fabric of time, a dance of innocence forever",
     },
   ];
 
