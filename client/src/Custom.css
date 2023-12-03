@@ -107,11 +107,6 @@ p {
   size: 30;
 }
 
-/* inputs */
-.input-group {
-  /* height: 10px; */
-}
-
 /* Remove the button style for iOS devices */
 .round-button::-webkit-inner-spin-button,
 .round-button::-webkit-outer-spin-button {

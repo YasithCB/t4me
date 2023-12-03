@@ -6,7 +6,7 @@ const allProductsList = [
     name: "Freedom",
     desc: "Freedom",
     category: "Printed",
-    imgUrl: "/images/printed/0001.jpg",
+    imgUrl: ["/images/printed/0001.jpg"],
     price: 1390,
   },
   {
@@ -14,7 +14,7 @@ const allProductsList = [
     name: "Lovely Butterflies",
     desc: "Lovely Butterflies pink color design",
     category: "Printed",
-    imgUrl: "/images/printed/0002.jpg",
+    imgUrl: ["/images/printed/0002.jpg"],
     price: 1490,
   },
   {
@@ -22,7 +22,7 @@ const allProductsList = [
     name: "Embarc Volunteers",
     desc: "Embarc Volunteers design. This is not a original one",
     category: "Printed",
-    imgUrl: "/images/printed/0003.jpg",
+    imgUrl: ["/images/printed/0003.jpg"],
     price: 1590,
   },
   {
@@ -30,7 +30,7 @@ const allProductsList = [
     name: "Batik Deco",
     desc: "Batik Decoration",
     category: "Printed",
-    imgUrl: "/images/printed/0004.jpg",
+    imgUrl: ["/images/printed/0004.jpg"],
     price: 1590,
   },
   {
@@ -38,7 +38,7 @@ const allProductsList = [
     name: "Adidas",
     desc: "Adidas",
     category: "Printed",
-    imgUrl: "/images/printed/0005.jpg",
+    imgUrl: ["/images/printed/0005.jpg"],
     price: 1290,
   },
   {
@@ -46,7 +46,7 @@ const allProductsList = [
     name: "Tommy Hilfiger",
     desc: "Tommy Hilfiger inline logo",
     category: "Printed",
-    imgUrl: "/images/printed/0006.jpg",
+    imgUrl: ["/images/printed/0006.jpg"],
     price: 1390,
   },
   {
@@ -54,7 +54,7 @@ const allProductsList = [
     name: "Hollister",
     desc: "Hollister",
     category: "Printed",
-    imgUrl: "/images/printed/0007.jpg",
+    imgUrl: ["/images/printed/0007.jpg"],
     price: 1390,
   },
   {
@@ -62,7 +62,7 @@ const allProductsList = [
     name: "Peach Goma",
     desc: "Peach Goma",
     category: "Printed",
-    imgUrl: "/images/printed/0008.jpg",
+    imgUrl: ["/images/printed/0008.jpg"],
     price: 1590,
   },
   {
@@ -70,7 +70,7 @@ const allProductsList = [
     name: "Tommy Hilfiger",
     desc: "Tommy Hilfiger Rectangular design with logo",
     category: "Printed",
-    imgUrl: "/images/printed/0010.jpg",
+    imgUrl: ["/images/printed/0010.jpg"],
     price: 1590,
   },
   {
@@ -78,7 +78,7 @@ const allProductsList = [
     name: "Born to Shoot",
     desc: "Photographer design",
     category: "Printed",
-    imgUrl: "/images/printed/0012.jpg",
+    imgUrl: ["/images/printed/0012.jpg"],
     price: 1790,
   },
   {
@@ -86,7 +86,7 @@ const allProductsList = [
     name: "Java",
     desc: "Java Powered | Programmer | Java developer design",
     category: "Printed",
-    imgUrl: "/images/printed/0014.jpg",
+    imgUrl: ["/images/printed/0014.jpg"],
     price: 1390,
   },
   {
@@ -94,7 +94,7 @@ const allProductsList = [
     name: "Good Vibes",
     desc: "Good vibes only | ladies design",
     category: "Printed",
-    imgUrl: "/images/printed/0015.jpg",
+    imgUrl: ["/images/printed/0015.jpg"],
     price: 1390,
   },
   {
@@ -102,7 +102,7 @@ const allProductsList = [
     name: "Kawasaki",
     desc: "Kawasaki | Biker t-shirt design",
     category: "Printed",
-    imgUrl: "/images/printed/0020.jpg",
+    imgUrl: ["/images/printed/0020.jpg"],
     price: 1490,
   },
   {
@@ -110,7 +110,7 @@ const allProductsList = [
     name: "Kawasaki",
     desc: "Kawasaki | Powering your potentials | Biker t-shirt design",
     category: "Printed",
-    imgUrl: "/images/printed/0021.jpg",
+    imgUrl: ["/images/printed/0021.jpg"],
     price: 1490,
   },
   {
@@ -118,7 +118,7 @@ const allProductsList = [
     name: "Lamborghini",
     desc: "Lamborghini",
     category: "Printed",
-    imgUrl: "/images/printed/0022.jpg",
+    imgUrl: ["/images/printed/0022.jpg"],
     price: 1590,
   },
   {
@@ -126,7 +126,7 @@ const allProductsList = [
     name: "Ducati",
     desc: "Ducati | Black and white colors | Biker t-shirt design",
     category: "Printed",
-    imgUrl: "/images/printed/0023.jpg",
+    imgUrl: ["/images/printed/0023.jpg", "/images/printed/0023.1.jpg"],
     price: 1490,
   },
   {
@@ -134,7 +134,7 @@ const allProductsList = [
     name: "Christmus",
     desc: "Christmus | Santa | Christmus season design",
     category: "Printed",
-    imgUrl: "/images/printed/0025.jpg",
+    imgUrl: ["/images/printed/0025.jpg", "/images/printed/0025.1.jpg"],
     price: 1290,
   },
   {
@@ -142,7 +142,7 @@ const allProductsList = [
     name: "Ducati",
     desc: "Ducati Corse | Biker t-shirt design",
     category: "Printed",
-    imgUrl: "/images/printed/0027.jpg",
+    imgUrl: ["/images/printed/0027.jpg", "/images/printed/0027.1.jpg"],
     price: 1490,
   },
   {
@@ -150,7 +150,7 @@ const allProductsList = [
     name: "Broken Heart",
     desc: "Broken Black Heart",
     category: "Printed",
-    imgUrl: "/images/printed/0029.jpg",
+    imgUrl: ["/images/printed/0029.jpg", "/images/printed/0029.1.jpg"],
     price: 1290,
   },
   {
@@ -158,7 +158,7 @@ const allProductsList = [
     name: "Couple Heart",
     desc: "Couple Heart | Outlined heart design for couples | Black and white colors",
     category: "Printed",
-    imgUrl: "/images/printed/0030.jpg",
+    imgUrl: ["/images/printed/0030.jpg", "/images/printed/0030.1.jpg"],
     price: 1190,
   },
   {
@@ -166,7 +166,12 @@ const allProductsList = [
     name: "Playboy",
     desc: "Playboy | Black and white colors",
     category: "Printed",
-    imgUrl: "/images/printed/0033.jpg",
+    imgUrl: [
+      "/images/printed/0033.jpg",
+      "/images/printed/0033.1.jpg",
+      "/images/printed/0033.2.jpg",
+      "/images/printed/0033.3.jpg",
+    ],
     price: 1490,
   },
   {
@@ -174,7 +179,7 @@ const allProductsList = [
     name: "Dodge",
     desc: "Dodge | Car Lovers",
     category: "Printed",
-    imgUrl: "/images/printed/0037.jpg",
+    imgUrl: ["/images/printed/0037.jpg", "/images/printed/0037.1.jpg"],
     price: 1290,
   },
   {
@@ -182,7 +187,11 @@ const allProductsList = [
     name: "Kawasaki",
     desc: "Kawasaki | Bike Life",
     category: "Printed",
-    imgUrl: "/images/printed/0040.jpg",
+    imgUrl: [
+      "/images/printed/0040.jpg",
+      "/images/printed/0040.1.jpg",
+      "/images/printed/0040.2.jpg",
+    ],
     price: 1490,
   },
   {
@@ -190,7 +199,7 @@ const allProductsList = [
     name: "Artwork Yellow",
     desc: "Artwork Yellow | Graphics",
     category: "Printed",
-    imgUrl: "/images/printed/0041.jpg",
+    imgUrl: ["/images/printed/0041.jpg", "/images/printed/0041.1.jpg"],
     price: 1590,
   },
 ];
