@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import "../style/Galary.css";
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
     { url: "/images/gallery/1.jpg" },
@@ -78,13 +79,13 @@ const Gallery = () => {
     { url: "/images/gallery/71.jpg" },
   ];
 
-  const openModal = (index) => {
-    setSelectedImage(index);
-  };
+  // const openModal = (index) => {
+  //   setSelectedImage(index);
+  // };
 
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
+  // const closeModal = () => {
+  //   setSelectedImage(null);
+  // };
 
   return (
     <>
@@ -95,13 +96,12 @@ const Gallery = () => {
             src={image.url}
             alt={image.url}
             className="gallery-image"
-            onClick={() => openModal(index)}
+            // onClick={() => openModal(index)}
           />
         ))}
       </div>
 
       {/* modal */}
-     //
     </>
   );
 };
